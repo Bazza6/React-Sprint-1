@@ -1,0 +1,124 @@
+body {
+    max-width: 1200px;
+    margin: auto; 
+}
+
+header  {
+    height: 400px;
+    background-image: url(./images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+nav {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav div:hover {
+    color:red;
+}
+
+#centro {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+main {
+    flex: 3;
+    background-color: rgb(186, 186, 186);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main img:hover {
+    transform: scale(1.2);
+}
+
+.img {
+    overflow: hidden;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;;
+    background-color: rgb(255, 229, 229);
+    min-width: 350px;
+    width: 45%;
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo {
+    color: white;
+    padding: 10px;
+    background-color: rgb(255, 110, 38);
+    height: 2em;
+}
+
+.text {
+    padding: 10px;
+    column-count: 2;
+    font-size: 20px;
+    height: auto;
+    opacity: 0.5;
+}
+
+aside {
+    background-color: rgb(186, 186, 186);
+    text-align: center;
+    flex:1;
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+#centro {
+    flex-direction: column;
+}
+}
+
+/* PHONE */
+@media screen and (max-width: 540px) {
+    header p {
+        font-size: 1.5rem;
+    }
+    nav span {
+        display: none;
+    }
+}
+
+#logo {
+height: 50px;
+animation-name: logoo;
+animation-duration: 2s;
+}
+
+@keyframes logoo {
+    from {height: 70px;;}
+    to {height: 50px;;}
+}
+
+header p {
+    opacity: 0.5;
+    font-size: 2rem;
+    color: red;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: titolo;
+    animation-duration: 2s;
+}
+
+@keyframes titolo {
+    from {font-size: 4rem;}
+    to {font-size: 2rem;}
+}

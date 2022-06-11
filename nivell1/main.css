@@ -1,0 +1,96 @@
+body {
+    max-width:1200px;
+    margin: auto;
+}
+* {
+    margin: 10px;
+}
+section, nav, header, main, aside {
+    border: solid black 5px;
+}
+nav {
+    background-color: rgb(93, 92, 143);
+    margin: 0px;
+    display: flex;
+}
+nav div {
+    background-color: rgb(255, 55, 0);
+    height: 10px;
+    flex: 1;
+}
+nav div:nth-child(2n) {
+    flex: 4
+}
+header {
+    background-color: orange;
+    margin: 0px;
+}
+header div {
+    height: 10px;
+    background-color: bisque;
+}
+#s2 {
+    display: flex;
+}
+main {
+    background-color: grey;
+    margin: 0px;
+    flex: 2;
+}
+#sMain {
+    display: flex;
+    flex-wrap: wrap;  
+    margin: 0px;
+    border: none;
+}
+#sMain article {
+    height: 10px;
+    background-color: rgb(28, 61, 171);
+    flex: 45%;
+}
+main > article {
+    background-color: aqua;
+    height: 10px;
+    width: auto;
+}
+aside {
+    background-color: rgb(203, 70, 70);
+    margin: 0px;
+    flex: 1;
+}
+aside div {
+    height: 10px;
+    background-color: rgb(255, 228, 105) ;
+}
+footer {
+    border: solid 10px black;
+}
+footer div {
+    height: 10px;
+    background-color: rgb(255, 213, 0);
+    margin: 0px;
+}
+/* TABLET */
+@media only screen and (max-width: 768px) {
+    #s2 {
+        flex-direction: column;
+    }
+    #s2, main, aside {
+        border: solid yellow 5px; 
+    }
+}
+/* PHONE */
+@media only screen and (max-width: 540px) {
+    nav {
+       flex-direction: column;
+    }
+    nav div {
+        padding: 5px;
+    }
+    #sMain article {
+        flex: 100%;
+    }
+    #s2, main, aside {
+        border: solid yellow 5px; 
+    }
+}
